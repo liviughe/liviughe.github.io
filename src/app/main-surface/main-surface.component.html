@@ -1,0 +1,8 @@
+<h4>main-surface</h4>
+<div *ngIf="minefield">
+<mat-grid-list [cols]="minefield.width" rowHeight="2:1">  
+    <mat-grid-tile *ngFor="let bd of boardData">
+        <app-tile [state]="bd"></app-tile>        
+    </mat-grid-tile> 
+</mat-grid-list>
+</div>
